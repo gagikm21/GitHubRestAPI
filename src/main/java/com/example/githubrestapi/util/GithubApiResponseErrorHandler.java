@@ -22,4 +22,6 @@ public class GithubApiResponseErrorHandler implements ResponseErrorHandler {
     public void handleError(ClientHttpResponse clientHttpResponse) throws IOException {
 
     }
+
+
 }
