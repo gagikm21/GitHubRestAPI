@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 import java.io.IOException;
 
 @Component
-public class HeaderInterceptor implements ClientHttpRequestInterceptor {
+public class HeaderRequestInterceptor implements ClientHttpRequestInterceptor {
 
     @Value("${header.accept}")
     private String accept;

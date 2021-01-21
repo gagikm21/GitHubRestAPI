@@ -1,7 +1,7 @@
 package com.example.githubrestapi.config;
 
 import com.example.githubrestapi.util.GithubApiResponseErrorHandler;
-import com.example.githubrestapi.util.HeaderInterceptor;
+import com.example.githubrestapi.util.HeaderRequestInterceptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
@@ -15,7 +15,7 @@ public class AppConfig {
     private GithubApiResponseErrorHandler errorHandler;
 
     @Autowired
-    private HeaderInterceptor headerInterceptor;
+    private HeaderRequestInterceptor headerInterceptor;
 
     @Bean
     public RestTemplate restTemplate(RestTemplateBuilder builder){
